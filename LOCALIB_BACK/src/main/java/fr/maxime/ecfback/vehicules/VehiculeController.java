@@ -106,8 +106,8 @@ public class VehiculeController {
      * @return Une liste de véhicules
      */
     @GetMapping("type")
-    public List<Vehicule> findAllByType(@RequestParam String type) {
-        return service.findAllByType(type);
+    public List<Vehicule> findAllByTypevehicule(@RequestParam String type) {
+        return service.findAllByTypevehicule(type);
     }
 
     /**
@@ -154,8 +154,8 @@ public class VehiculeController {
      * @return Une liste de véhicule
      */
     @GetMapping("status")
-    public List<Vehicule> findAllByStatus(String status) {
-        return service.findAllByStatus(status);
+    public List<Vehicule> findAllByDisponibilite(@RequestParam String status) {
+        return service.findAllByDisponibilite(status);
     }
 
     /**

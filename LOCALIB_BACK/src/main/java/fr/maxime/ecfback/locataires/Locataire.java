@@ -3,6 +3,9 @@ package fr.maxime.ecfback.locataires;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.time.LocalDate;
+
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
@@ -16,5 +19,7 @@ public class Locataire {
     private String prenom;
     private String email;
     private String motDePasse;
+    private String telephone;
+    private LocalDate dateNaissance;
 
 }

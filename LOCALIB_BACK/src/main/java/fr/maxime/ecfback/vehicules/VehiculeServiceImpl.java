@@ -119,8 +119,8 @@ public class VehiculeServiceImpl implements VehiculeService {
      * @param type Le type de véhicule (Voiture, Camion, etc)
      * @return Une liste de véhicules
      */
-    public List<Vehicule> findAllByType(String type) {
-        return repository.findAllByType(type);
+    public List<Vehicule> findAllByTypevehicule(String type) {
+        return repository.findAllByTypevehicule(type);
     }
 
     /**
@@ -159,7 +159,7 @@ public class VehiculeServiceImpl implements VehiculeService {
      * @param status Le status de location (Loué, Disponible)
      * @return Une liste de véhicule
      */
-    public List<Vehicule> findAllByStatus(String status) {
-        return repository.findAllByStatus(status);
+    public List<Vehicule> findAllByDisponibilite(String status) {
+        return repository.findAllByDisponibilite(status);
     }
 }

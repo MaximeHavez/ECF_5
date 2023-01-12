@@ -49,7 +49,7 @@ public class LocationController {
         Double prixTotal = service.calculPrixTotal(idVehicule, idLocation, dateDebut, dateFin);
         entity.setPrixTotal(prixTotal);
 
-        if (Objects.equals(entity.getVehicule().getStatus(), "Loué")) {
+        if (Objects.equals(entity.getVehicule().getDisponibilite(), "Loué")) {
             throw new ResponseStatusException(HttpStatus.NOT_ACCEPTABLE, "Le véhicule est déjà loué");
         }
         return service.save(entity);

@@ -15,9 +15,9 @@ public class Vehicule {
     private String marque;
     private String modele;
     private String immatriculation;
-    private String type;
+    private String typevehicule;
     private Double prix;
     private String etat;
-    private String status;
+    private String disponibilite;
 
 }
