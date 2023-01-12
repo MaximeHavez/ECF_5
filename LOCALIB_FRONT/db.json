@@ -1,0 +1,60 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "nom": "Havez",
+      "prenom": "Maxime",
+      "dateNaissance": "1983-07-01",
+      "email": "havez.maxime@gmail.com",
+      "telephone": "0754822198"
+    },
+    {
+      "id": 57,
+      "nom": "Flouquet",
+      "prenom": "Florian",
+      "dateNaissance": "2022-10-11",
+      "email": "florian.flouquet@gmail.com",
+      "telephone": "0712345678"
+    }
+  ],
+  "vehicules": [
+    {
+      "id": 0,
+      "marque": "Peugeot",
+      "modele": "308",
+      "immatriculation": "AB-974-WT",
+      "etat": "A",
+      "prix": 3000,
+      "disponibilite": "Loué",
+      "typevehicule": "Voiture",
+      "imgVehi": "voiture1"
+    },
+    {
+      "id": 1,
+      "marque": "Renault",
+      "modele": "Clio",
+      "immatriculation": "RT-875-DV",
+      "etat": "A",
+      "prix": "250",
+      "disponibilite": "Disponible",
+      "typevehicule": "Voiture",
+      "imgVehi": "voiture2"
+    }
+  ],
+  "locations": [
+    {
+      "id": 0,
+      "debut": "2022-10-09",
+      "fin": "2022-10-20",
+      "prixTotal": 0,
+      "locataire": 0,
+      "vehicule": 0
+    },
+    {
+      "id": "80c5731-5d5e-3a4c-1df0-857f8dcc8",
+      "prixTotal": 3750,
+      "locataire": 57,
+      "vehicule": "1"
+    }
+  ]
+}
