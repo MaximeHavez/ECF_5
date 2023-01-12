@@ -50,7 +50,7 @@ const FormulaireAjoutLocation = () => {
     const handleClickDate = () => {
         const duree = ((newDate[1] -newDate[0]+1)/86400000)
         setDuree(duree)
-        setVehicule({...vehicule, disponibilite : loue})
+        //setVehicule({...vehicule, disponibilite : loue})
         setPrixLocation(vehicule.prix*duree)
 
     }
@@ -65,12 +65,13 @@ const FormulaireAjoutLocation = () => {
 
         setNewLocation({...newLocation, debut : date[0], fin : date[1], prixTotal : prixLocation, locataire : event.target.value, vehicule : params.id as string })
     }
+    console.log(newLocation)
 
     /**
      * Il met à jour le véhicule et ajoute un nouveau loyer.
      */
     const handleClickValidationLoc = () => {
-        callVehiculeService.updateVehicule(params.id as string, vehicule)
+        //callVehiculeService.updateVehicule(params.id as string, vehicule)
         callRentService.addRent(newLocation)
     }
 
@@ -125,7 +126,7 @@ const FormulaireAjoutLocation = () => {
               <p>La durée de la location est de {duree} jour(s)</p>
               <p>Pour un prix total de {prixLocation} €</p>
               <p>avec un prix à la journée de {vehicule.prix} €</p>
-              <Link to="#"><Button onClick={handleClickValidationLoc}>Valider la location</Button></Link>
+              <Link to="/GestionLocation"><Button onClick={handleClickValidationLoc}>Valider la location</Button></Link>
           </div>
           </div>
 

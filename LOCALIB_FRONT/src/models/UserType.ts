@@ -1,5 +1,6 @@
+import uuid from "react-uuid";
 export default class UserType {
-    id:number;
+    id!:string;
     public static IdUser = 0;
     nom:string;
     prenom:string;
@@ -8,7 +9,7 @@ export default class UserType {
     telephone:number;
 
     constructor(nom: string, prenom: string, dateNaissance: string, email: string, telephone: number) {
-        this.id = UserType.IdUser++;
+        //this.id = uuid();
         this.nom = nom;
         this.prenom = prenom;
         this.dateNaissance = dateNaissance;

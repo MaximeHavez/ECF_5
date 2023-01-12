@@ -3,7 +3,7 @@ import VehiculeType from "./VehiculeType";
 import uuid from "react-uuid";
 
 export class LocationType {
-    id : string
+    id !: string
     debut : any
     fin : any
     prixTotal : number
@@ -17,7 +17,7 @@ export class LocationType {
         this.debut = debut;
         this.fin = fin;
         this.prixTotal = prixTotal;
-        this.id = uuid();
+        //this.id = uuid();
         this.locataire = locataire;
         this.vehicule = vehicule;
 

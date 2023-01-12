@@ -1,5 +1,6 @@
+import uuid from "react-uuid";
 export default class VehiculeType {
-    id:number;
+    id!:string;
     public static IdUser = 0;
     marque:string;
     modele:string;
@@ -12,7 +13,7 @@ export default class VehiculeType {
 
 
     constructor(marque: string, modele: string, immatriculation: string, etat: string, prix: number, disponibilite: string, typevehicule: string, imgVehi:string) {
-        this.id = VehiculeType.IdUser++;
+        //this.id = uuid();
         this.marque = marque;
         this.modele = modele;
         this.immatriculation = immatriculation;
